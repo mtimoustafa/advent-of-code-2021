@@ -3,7 +3,8 @@
   "license": "MIT",
   "scripts": {
     "one": "nodemon src/one/one.js",
-    "two": "nodemon src/two/two.js"
+    "two": "nodemon src/two/two.js",
+    "three": "nodemon src/three/three.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

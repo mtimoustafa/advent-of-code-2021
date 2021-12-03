@@ -2,7 +2,8 @@
   "name": "advent-of-code-2021",
   "license": "MIT",
   "scripts": {
-    "one": "nodemon src/one/one.js"
+    "one": "nodemon src/one/one.js",
+    "two": "nodemon src/two/two.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

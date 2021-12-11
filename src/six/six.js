@@ -1,8 +1,7 @@
 const fs = require('fs')
 
 const fishSpawnTime = 6
-const newFishAge = 8
-const longestAge = Math.max(newFishAge, fishSpawnTime)
+const newFishAge = 8 // Must be longest age
 
 const partOne = ({ fishes, days }) => {
   let fishPool = Object.assign([], fishes)
@@ -27,7 +26,7 @@ const partOne = ({ fishes, days }) => {
 
 const partTwo = ({ fishes, days }) => {
   let fishPool = {}
-  for (let age = 0; age <= longestAge; age++) {
+  for (let age = 0; age <= newFishAge; age++) {
     fishPool[age] = 0
   }
 
@@ -37,15 +36,19 @@ const partTwo = ({ fishes, days }) => {
 
   for (let day = 0; day < days; day++) {
     let newFishPool = Object.assign({}, fishPool)
+
     for (ageGroup in fishPool) {
       const age = parseInt(ageGroup, 10)
 
-      if (age === newFishAge) {
-        newFishPool[newFishAge] = fishPool[0]
-      } else if (age === fishSpawnTime) {
-        newFishPool[fishSpawnTime] = fishPool[0] + fishPool[age + 1]
-      } else {
-        newFishPool[age] = fishPool[age + 1]
+      switch (age) {
+        case newFishAge:
+          newFishPool[newFishAge] = fishPool[0]
+          break;
+        case fishSpawnTime:
+          newFishPool[fishSpawnTime] = fishPool[0] + fishPool[age + 1]
+          break;
+        default:
+          newFishPool[age] = fishPool[age + 1]
       }
     }
 

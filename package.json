@@ -8,7 +8,8 @@
     "four": "nodemon src/four/four.js",
     "five": "nodemon src/five/five.js",
     "six": "nodemon src/six/six.js",
-    "seven": "nodemon src/seven/seven.js"
+    "seven": "nodemon src/seven/seven.js",
+    "eight": "nodemon src/eight/eight.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

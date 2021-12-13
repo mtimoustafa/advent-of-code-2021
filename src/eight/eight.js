@@ -89,7 +89,6 @@ const partTwo = ({ signals }) => {
   }
 
   return digitTotal
-  // TODO: digits are borked in an inconsistent way :(
 }
 
 fs.readFile('src/eight/assets/eight.txt', (error, data) => {

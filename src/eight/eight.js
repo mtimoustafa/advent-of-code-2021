@@ -9,7 +9,7 @@ const difference = (minuend, subtrahend) => {
 }
 
 const checkContains = (container, containee) => {
-  return containee.split('').every(wire => containee.includes(wire))
+  return containee.split('').every(wire => container.includes(wire))
 }
 
 const decodePatterns = (patterns) => {

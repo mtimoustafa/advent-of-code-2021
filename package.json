@@ -11,7 +11,8 @@
     "seven": "nodemon src/seven/seven.js",
     "eight": "nodemon src/eight/eight.js",
     "nine": "nodemon src/nine/nine.js",
-    "ten": "nodemon src/ten/ten.js"
+    "ten": "nodemon src/ten/ten.js",
+    "eleven": "nodemon src/eleven/eleven.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
